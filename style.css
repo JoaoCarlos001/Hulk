@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* width: 100%; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+    background: rgb(3, 204, 3);
+    background-image: linear-gradient(45deg, rgb(9, 211, 9), rgb(121, 2, 121));
+}
+
+nav{
+    width: 100%; 
+    display: flex;
+    justify-content: flex-end;
+}
+
+ul{
+    width: 500px;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.wrapper{
+    width: 300px;
+    height: 400px;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.9);
+    position: relative;
+    overflow: hidden;
+}
+
+.card img{
+    width: 100%;
+    height: 50%;
+    border-radius: 10px;
+}
+
+.card h2{
+    text-align: center;
+    color: rgb(59, 56, 56);
+    margin-top: 10px;
+}
+
+.details{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    color: rgb(0, 0, 0);
+    font-weight: 45px;
+}
+
+.details p {
+    text-align: center;
+}
+
+.det-btn{
+    display: block;
+    padding: 15px 30px;
+    width: 90%;
+    margin: 20px auto;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background-color: green;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.det-btn:hover{
+    box-shadow: 2px 2px 5px black;
+}
+
+.card-details{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(45deg, green , black);
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 5px;
+    transform: translateX(-100%);
+    transition: transform .3s ease-out;
+}
+
+.card-details.open{
+    transform: translate(0);
+}
+
+.btn-att{
+    display: block;
+    padding: 15px 15px;
+    width: 90%;
+    margin: 1px auto;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background-color: rgb(15, 44, 15);
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+li{
+    font-size: 20px;
+}
+
+li:hover{
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px green;
+    color: green;
+}
+
+.hulkName{
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+.hq{
+    width: 200px;
+}
